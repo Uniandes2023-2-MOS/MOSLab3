@@ -1,0 +1,2 @@
+*** Error: Invalid current directory path \\wsl.localhost\Ubuntu\home\sp\MOS\MOSLab3
+           UNC paths are not supported as the current directory
