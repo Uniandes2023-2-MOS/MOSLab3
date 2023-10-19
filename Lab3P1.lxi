@@ -1,0 +1,21 @@
+B 3 C o m p i l a t i o n
+B 68 Equation Listing    SOLVE Model1 Using MIP From line 51
+D 71 funObj
+D 76 minRol
+D 81 cantidadJugadores
+D 86 terceroOSegundo
+B 92 Column Listing      SOLVE Model1 Using MIP From line 51
+E 95 z
+E 102 x
+B 124 Range Statistics    SOLVE Model1 Using MIP From line 51
+B 135 Model Statistics    SOLVE Model1 Using MIP From line 51
+B 148 Solution Report     SOLVE Model1 Using MIP From line 51
+F 193 funObj
+F 197 minRol
+F 204 cantidadJugadores
+F 205 terceroOSegundo
+G 209 z
+G 213 x
+B 231 E x e c u t i o n
+I 231 x
+I 238 z

@@ -1,0 +1,35 @@
+
+--- Job Lab3P1.gms Start 10/18/23 22:08:09 44.3.0 8b8fb1cb WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\44\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    PageSize 0
+    ScrDir C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\225a\
+    SysDir C:\GAMS\44\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: GAMS Community License for Juan Pinzon         G230810|0002AO-GEN
+          Universidad de los Andes,                                  CL6517
+          C:\Users\spinz\OneDrive\Documents\GAMS\gamslice.txt
+          Juan Pinzon, j.pinzons@uniandes.edu.co                           
+          Community license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 6 core(s), and 12 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- Lab3P1.gms(48) 3 Mb 2 Errors
+*** Error  65 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Discrete variables can only appear in MIP, RMIP, MINLP
+      RMINLP MIQCP or RMIQCP MPEC RMPEC problems.
+*** Error 256 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Error(s) in analyzing solve statement.
+*** The following LP errors were detected in model Model1:
+     65 equation funObj.. discrete variable "x" not allowed
+     65 equation terceroOSegundo.. discrete variable "x" not allowed
+     65 equation terceroOSegundo.. discrete variable "x" not allowed
+--- Lab3P1.gms(54) 3 Mb 2 Errors
+*** Status: Compilation error(s)
+--- Job Lab3P1.gms Stop 10/18/23 22:08:09 elapsed 0:00:00.008

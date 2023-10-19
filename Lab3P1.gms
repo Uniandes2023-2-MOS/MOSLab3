@@ -20,30 +20,36 @@ p7      1   0   1   3   2   2   1;
 
 
 Variables
-x(j) jugadores que juegan;
+z objective
+
+Binary Variable
+x(j) jugadores que juega
 
 Equations
 funObj                        Objective Function
 
 minRol                        Minimo de roles
 
-controlMin                    Control minimo
+cantidadJugadores
 
 terceroOSegundo
 ;
 
 
-funObj                 ..     z =e= sum ((j), x(j)*c(j,7));
+funObj                ..     z =e= sum ((j), x(j)*c(j,"a7"));
 
 
 minRol (i)$[ord(i) >= 1 and ord(i) <= 6]..  sum((j), c(j,i)) =g= rm(i);
 
+cantidadJugadores       ..  sum((j), x(j)) =e= 5;
 
-terceroOSegundo    ..     x(3) + x(2) =e= 1;
 
-Model Model1 /all/ ;
-option lp=CPLEX
-Solve model1 using lp maximizing z;
+terceroOSegundo    ..     x("p3") + x("p2") =e= 1;
+
+Model Model1 /all/;
+option lp=CPLEX;
+Solve model1 using mip maximizing z;
+
 
 Display x.l;
 Display z.l;

@@ -1,0 +1,46 @@
+
+--- Job Lab3P1.gms Start 10/18/23 22:10:21 44.3.0 8b8fb1cb WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\44\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    PageSize 0
+    ScrDir C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\225a\
+    SysDir C:\GAMS\44\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: GAMS Community License for Juan Pinzon         G230810|0002AO-GEN
+          Universidad de los Andes,                                  CL6517
+          C:\Users\spinz\OneDrive\Documents\GAMS\gamslice.txt
+          Juan Pinzon, j.pinzons@uniandes.edu.co                           
+          Community license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 6 core(s), and 12 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- Lab3P1.gms(47) 3 Mb 1 Error
+*** Error 409 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Unrecognizable item - skip to find a new statement
+      looking for a ';' or a key word to get started again
+--- Lab3P1.gms(51) 3 Mb 2 Errors
+*** Error 257 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Solve statement not checked because of previous errors
+--- Lab3P1.gms(54) 3 Mb 3 Errors
+*** Error 141 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Symbol declared but no values have been assigned. Check for missing
+       data definition, assignment, data loading or implicit assignment
+       via a solve statement. Suppress with $onImplicitAssign.
+       A wild shot: You may have spurious commas in the explanatory
+       text of a declaration. Check symbol reference list.
+--- Lab3P1.gms(55) 3 Mb 4 Errors
+*** Error 141 in C:\Users\spinz\OneDrive\Documents\GitHub\MOSLab3\Lab3P1.gms
+    Symbol declared but no values have been assigned. Check for missing
+       data definition, assignment, data loading or implicit assignment
+       via a solve statement. Suppress with $onImplicitAssign.
+       A wild shot: You may have spurious commas in the explanatory
+       text of a declaration. Check symbol reference list.
+--- Lab3P1.gms(57) 3 Mb 4 Errors
+*** Status: Compilation error(s)
+--- Job Lab3P1.gms Stop 10/18/23 22:10:21 elapsed 0:00:00.009
