@@ -1,5 +1,5 @@
-Set i   atributos / a1 , a2, a3, a4, a5 /;
-* a1 = rol, a2 = Control balon, a3 = Disparo, a4 = rebotes, a5 = defensa
+Set i   atributos / a1 , a2, a3, a4, a5, a6, a7 /;
+* a1 = Ataque, a2 = Centro, a3 = Defensa, a4 = Control balon, a5 = Disparo, a6 = rebotes, a7 = defensa
 Set j   jugadores  / p1, p2, p3, p4, p5, p6, p7 /;
 
 
@@ -12,32 +12,16 @@ parameter w1_vec(iter) w1 values
                   it7 0.4, it8 0.3, it9 , it10 0.1, it11 0/;
 parameter w2_vec(iter) w2 values;
 
-* Para rol, Ataque, centro, defensa = 1 1 1 a decimal
 Table c(j,i) atributos de jugadores
-        a1  a2  a3  a4  a5
-p1      1   3   3   1   3
-p2      2   2   1   3   2
-p3      5   2   3   2   2
-p4      6   1   3   3   1
-p5      5   3   3   3   3
-p6      6   3   1   2   3    
-p7      5   3   2   2   1;
+        a1  a2  a3  a4  a5  a6  a7
+p1      1   0   0   3   3   1   3
+p2      0   1   0   2   1   3   2
+p3      1   0   1   2   3   2   2
+p4      0   1   1   1   3   3   1
+p5      1   0   1   3   3   3   3
+p6      0   1   1   3   1   2   3    
+p7      1   0   1   3   2   2   1;
 
-Table t(j,k) sending delay
-                 d1       d2      d3       d4
-s1               12       14      10       11
-s2               11        8       7       13
-s3                6       11       4       15;
-
-Table inv(i,j) inventory
-                  s1       s2       s3
-p1                60       80       50
-p2                20       20       30;
-
-Table dem(i,k) demand
-                 d1      d2      d3       d4
-p1               50      90      40       10
-p2               10      20      10       30;
 
 
 Variables
@@ -63,7 +47,7 @@ f1_value               ..     f1=e= sum((i,j,k), c(j,k) * x(i,j,k));
 
 f2_value               ..     f2=e= sum((i,j,k), t(j,k) * x(i,j,k));
 
-funObj                 ..     z =e= w1*f1 + w2*f2;
+funObj                 ..     z =e= sum ((j), x(j)*c(j,7));
 
 invConstraint(i,j)     ..     sum((k), x(i,j,k)) =l= inv(i,j);
 
